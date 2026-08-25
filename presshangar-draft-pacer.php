@@ -3,7 +3,7 @@
  * Plugin Name:       PressHangar Draft Pacer
  * Plugin URI:        https://presshangar.com/presshangar-draft-pacer
  * Description:       Source-agnostic natural pacing publishing layer for WordPress drafts, by PressHangar (a brand of Musubiemu LLC). Schedules drafts as "future" posts with human-like intervals and guarantees zero missed publications via a self-healing watchdog. Does not generate any content.
- * Version:           0.2.8
+ * Version:           0.2.9
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            Musubiemu LLC
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /** Plugin version. */
-define( 'PHDRIP_VERSION', '0.2.8' );
+define( 'PHDRIP_VERSION', '0.2.9' );
 
 /** Absolute path to the main plugin file. */
 define( 'PHDRIP_PLUGIN_FILE', __FILE__ );

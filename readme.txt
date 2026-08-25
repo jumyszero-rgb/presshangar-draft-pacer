@@ -4,7 +4,7 @@ Tags: schedule, drip, drafts, auto publish, missed schedule
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.2.8
+Stable tag: 0.2.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -94,6 +94,9 @@ PressHangar Draft Pacer provides a **reliable pacing layer** that distributes co
 Always follow Google's content policies, prioritize quality over quantity, and use this plugin as part of a larger, thoughtful content strategy. If you're already in penalty, consult Google Search Console and a professional SEO advisor.
 
 == Changelog ==
+
+= 0.2.9 =
+* Add: Official plugin icon and banner shown on the WordPress.org plugin page.
 
 = 0.2.8 =
 * Add: A state-aware "Getting started" panel at the top of the settings page that guides first-time setup as a live checklist.
