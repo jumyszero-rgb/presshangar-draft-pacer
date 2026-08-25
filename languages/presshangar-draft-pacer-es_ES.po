@@ -1,0 +1,553 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PressHangar Draft Pacer 0.2.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/presshangar-draft-pacer\n"
+"POT-Creation-Date: 2026-08-22T22:45:50+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: es\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: presshangar-draft-pacer\n"
+"X-Generator: polib\n"
+
+#. Plugin Name of the plugin
+#: presshangar-draft-pacer.php includes/class-phdrip-admin.php:55
+#: includes/class-phdrip-admin.php:56 includes/class-phdrip-admin.php:516
+msgid "PressHangar Draft Pacer"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: presshangar-draft-pacer.php
+msgid "https://presshangar.com/presshangar-draft-pacer"
+msgstr ""
+
+#. Description of the plugin
+#: presshangar-draft-pacer.php
+msgid ""
+"Source-agnostic natural pacing publishing layer for WordPress drafts, by "
+"PressHangar (a brand of Musubiemu LLC). Schedules drafts as \"future\" posts"
+" with human-like intervals and guarantees zero missed publications via a "
+"self-healing watchdog. Does not generate any content."
+msgstr ""
+"Capa de publicación con ritmo natural, independiente del origen, para "
+"borradores de WordPress, de PressHangar (una marca de Musubiemu LLC). "
+"Programa los borradores como entradas «futuras» con intervalos realistas y "
+"garantiza cero publicaciones perdidas mediante un perro guardián "
+"autorreparable. No genera ningún contenido."
+
+#. Author of the plugin
+#: presshangar-draft-pacer.php
+msgid "Musubiemu LLC"
+msgstr ""
+
+#. Author URI of the plugin
+#: presshangar-draft-pacer.php
+msgid "https://presshangar.com"
+msgstr ""
+
+#. translators: %d: number of posts scheduled.
+#: includes/class-phdrip-admin.php:102
+#, php-format
+msgid "PressHangar Draft Pacer scheduled %d draft."
+msgid_plural "PressHangar Draft Pacer scheduled %d drafts."
+msgstr[0] "PressHangar Draft Pacer programó %d borrador."
+msgstr[1] "PressHangar Draft Pacer programó %d borradores."
+
+#. translators: %d: number of posts that failed to schedule.
+#: includes/class-phdrip-admin.php:109
+#, php-format
+msgid "%d failed."
+msgid_plural "%d failed."
+msgstr[0] "%d falló."
+msgstr[1] "%d fallaron."
+
+#. translators: %d: number of posts reverted to draft.
+#: includes/class-phdrip-admin.php:126
+#, php-format
+msgid "PressHangar Draft Pacer reverted %d scheduled post back to draft."
+msgid_plural ""
+"PressHangar Draft Pacer reverted %d scheduled posts back to draft."
+msgstr[0] "PressHangar Draft Pacer devolvió %d entrada programada a borrador."
+msgstr[1] ""
+"PressHangar Draft Pacer devolvió %d entradas programadas a borrador."
+
+#. translators: %d: number of existing scheduled posts adopted into
+#. PressHangar Draft Pacer management.
+#: includes/class-phdrip-admin.php:139
+#, php-format
+msgid ""
+"PressHangar Draft Pacer adopted %d existing scheduled post into management."
+msgid_plural ""
+"PressHangar Draft Pacer adopted %d existing scheduled posts into management."
+msgstr[0] ""
+"PressHangar Draft Pacer adoptó %d entrada programada existente en su "
+"gestión."
+msgstr[1] ""
+"PressHangar Draft Pacer adoptó %d entradas programadas existentes en su "
+"gestión."
+
+#: includes/class-phdrip-admin.php:151
+msgid ""
+"PressHangar Draft Pacer: WP-Cron does not appear to be running (no watchdog "
+"activity in over 2 hours). Scheduled posts may not publish on time. Consider"
+" setting up an external cron trigger under Settings > PressHangar Draft "
+"Pacer."
+msgstr ""
+"PressHangar Draft Pacer: WP-Cron no parece estar funcionando (sin actividad "
+"del perro guardián en más de 2 horas). Las entradas programadas podrían no "
+"publicarse a tiempo. Considera configurar un disparador de cron externo en "
+"Ajustes > PressHangar Draft Pacer."
+
+#: includes/class-phdrip-admin.php:161 includes/class-phdrip-admin.php:187
+#: includes/class-phdrip-admin.php:224
+msgid "You do not have permission to perform this action."
+msgstr "No tienes permiso para realizar esta acción."
+
+#: includes/class-phdrip-admin.php:519
+msgid "Status"
+msgstr "Estado"
+
+#: includes/class-phdrip-admin.php:523
+msgid "Automatic scheduling"
+msgstr "Programación automática"
+
+#: includes/class-phdrip-admin.php:526
+msgid "Enabled"
+msgstr "Activada"
+
+#: includes/class-phdrip-admin.php:528
+msgid "Disabled"
+msgstr "Desactivada"
+
+#: includes/class-phdrip-admin.php:533
+msgid "Remaining drafts"
+msgstr "Borradores restantes"
+
+#: includes/class-phdrip-admin.php:537
+msgid "Scheduled (PressHangar Draft Pacer-managed)"
+msgstr "Programadas (gestionadas por PressHangar Draft Pacer)"
+
+#: includes/class-phdrip-admin.php:541
+msgid "Scheduled (site-wide)"
+msgstr "Programadas (en todo el sitio)"
+
+#. translators: %d: number of scheduled posts outside PressHangar Draft
+#. Pacer's management.
+#: includes/class-phdrip-admin.php:548
+#, php-format
+msgid ""
+"There is %d scheduled post outside PressHangar Draft Pacer's management. Use"
+" the button below to adopt it so it's included in the counts and protected "
+"by failure recovery (the watchdog)."
+msgid_plural ""
+"There are %d scheduled posts outside PressHangar Draft Pacer's management. "
+"Use the button below to adopt them so they're included in the counts and "
+"protected by failure recovery (the watchdog)."
+msgstr[0] ""
+"Hay %d entrada programada fuera de la gestión de PressHangar Draft Pacer. "
+"Usa el botón de abajo para adoptarla y que se incluya en los recuentos y "
+"quede protegida por la recuperación ante fallos (el perro guardián)."
+msgstr[1] ""
+"Hay %d entradas programadas fuera de la gestión de PressHangar Draft Pacer. "
+"Usa el botón de abajo para adoptarlas y que se incluyan en los recuentos y "
+"queden protegidas por la recuperación ante fallos (el perro guardián)."
+
+#: includes/class-phdrip-admin.php:564
+msgid "Next publish"
+msgstr "Próxima publicación"
+
+#: includes/class-phdrip-admin.php:565
+msgid "None scheduled"
+msgstr "Ninguna programada"
+
+#: includes/class-phdrip-admin.php:568
+msgid "Cron health"
+msgstr "Estado del cron"
+
+#: includes/class-phdrip-admin.php:571
+msgid "OK"
+msgstr "OK"
+
+#: includes/class-phdrip-admin.php:573
+msgid "Warning"
+msgstr "Advertencia"
+
+#: includes/class-phdrip-admin.php:578
+msgid "Total recovered posts"
+msgstr "Total de entradas recuperadas"
+
+#: includes/class-phdrip-admin.php:588
+msgid "Run Assignment Now"
+msgstr "Ejecutar la asignación ahora"
+
+#: includes/class-phdrip-admin.php:591
+msgid ""
+"Are you sure you want to revert all PressHangar Draft Pacer scheduled posts "
+"back to draft? This cannot be undone."
+msgstr ""
+"¿Seguro que quieres devolver a borrador todas las entradas programadas por "
+"PressHangar Draft Pacer? Esto no se puede deshacer."
+
+#: includes/class-phdrip-admin.php:594
+msgid "Unschedule All"
+msgstr "Desprogramar todo"
+
+#: includes/class-phdrip-admin.php:598
+msgid ""
+"Import existing scheduled posts into PressHangar Draft Pacer management? "
+"Post dates and status will not be changed."
+msgstr ""
+"¿Importar las entradas ya programadas a la gestión de PressHangar Draft "
+"Pacer? No se cambiarán las fechas ni el estado de las entradas."
+
+#: includes/class-phdrip-admin.php:601
+msgid "Adopt Existing Scheduled Posts"
+msgstr "Adoptar entradas ya programadas"
+
+#: includes/class-phdrip-admin.php:611
+msgid "Save Settings"
+msgstr "Guardar ajustes"
+
+#: includes/class-phdrip-admin.php:617
+msgid "External Cron Setup Guide"
+msgstr "Guía de configuración de cron externo"
+
+#: includes/class-phdrip-admin.php:619
+msgid "DISABLE_WP_CRON is defined on this site."
+msgstr "DISABLE_WP_CRON está definido en este sitio."
+
+#: includes/class-phdrip-admin.php:619
+msgid ""
+"WordPress will not trigger cron automatically; an external trigger is "
+"required."
+msgstr ""
+"WordPress no disparará el cron automáticamente; se requiere un disparador "
+"externo."
+
+#: includes/class-phdrip-admin.php:621
+msgid ""
+"WP-Cron relies on site visits to run scheduled tasks, which can be "
+"unreliable on low-traffic sites. Setting up a real server cron job is "
+"recommended."
+msgstr ""
+"WP-Cron depende de las visitas al sitio para ejecutar las tareas "
+"programadas, lo que puede ser poco fiable en sitios con poco tráfico. Se "
+"recomienda configurar una tarea cron real en el servidor."
+
+#: includes/class-phdrip-admin.php:623
+msgid ""
+"Add one of the following lines to your server crontab (runs every 15 "
+"minutes):"
+msgstr ""
+"Añade una de las siguientes líneas al crontab de tu servidor (se ejecuta "
+"cada 15 minutos):"
+
+#: includes/class-phdrip-admin.php:630
+msgid "Where to paste it"
+msgstr "Dónde pegarla"
+
+#: includes/class-phdrip-admin.php:632
+msgid "Shared hosting"
+msgstr "Alojamiento compartido"
+
+#: includes/class-phdrip-admin.php:633
+msgid ""
+"Most hosting control panels (cPanel, Plesk, and most rental servers) have a "
+"'Cron jobs' section. Paste the line above there. If the panel asks for "
+"command and schedule separately, set the schedule to every 15 minutes."
+msgstr ""
+"La mayoría de los paneles de control de alojamiento (cPanel, Plesk y la "
+"mayoría de los servidores de alquiler) tienen una sección «Tareas cron». "
+"Pega ahí la línea de arriba. Si el panel pide el comando y la programación "
+"por separado, configura la programación en cada 15 minutos."
+
+#: includes/class-phdrip-admin.php:635
+msgid "VPS / dedicated server"
+msgstr "VPS / servidor dedicado"
+
+#: includes/class-phdrip-admin.php:636
+msgid "Run `crontab -e` and paste the line above on a new line."
+msgstr "Ejecuta `crontab -e` y pega la línea de arriba en una nueva línea."
+
+#: includes/class-phdrip-admin.php:638
+msgid "Home server"
+msgstr "Servidor doméstico"
+
+#: includes/class-phdrip-admin.php:639
+msgid ""
+"If WordPress runs on your own machine, use crontab on Linux/macOS, or Task "
+"Scheduler on Windows to run the command every 15 minutes."
+msgstr ""
+"Si WordPress se ejecuta en tu propia máquina, usa crontab en Linux/macOS, o "
+"el Programador de tareas en Windows, para ejecutar el comando cada 15 "
+"minutos."
+
+#: includes/class-phdrip-admin.php:641
+msgid ""
+"No cron settings available? Some hosts don't offer cron at all. You can "
+"register the URL above with a free external ping service such as cron-"
+"job.org — or simply skip this step. External cron is only an extra safety "
+"net: the plugin works with the normal WordPress cron, and the built-in "
+"watchdog rescues any missed posts."
+msgstr ""
+"¿No hay ajustes de cron disponibles? Algunos alojamientos no ofrecen cron en"
+" absoluto. Puedes registrar la URL de arriba en un servicio de ping externo "
+"gratuito como cron-job.org — o simplemente omitir este paso. El cron externo"
+" es solo una red de seguridad adicional: la extensión funciona con el cron "
+"normal de WordPress, y el perro guardián integrado rescata cualquier entrada"
+" perdida."
+
+#: includes/class-phdrip-scheduler.php:64
+msgid "No draft posts were found to schedule."
+msgstr "No se encontraron borradores que programar."
+
+#. translators: 1: number of posts scheduled, 2: date/time of the last
+#. scheduled post, 3: number of posts that failed.
+#: includes/class-phdrip-scheduler.php:131
+#, php-format
+msgid ""
+"Scheduled %1$d draft(s). Last post is set for %2$s. %3$d failed and were "
+"left as drafts."
+msgstr ""
+"%1$d borrador(es) programado(s). La última entrada está prevista para el "
+"%2$s. %3$d fallaron y se dejaron como borradores."
+
+#. translators: 1: number of posts scheduled, 2: date/time of the last
+#. scheduled post.
+#: includes/class-phdrip-scheduler.php:139
+#, php-format
+msgid "Scheduled %1$d draft(s). Last post is set for %2$s."
+msgstr ""
+"%1$d borrador(es) programado(s). La última entrada está prevista para el "
+"%2$s."
+
+#: includes/class-phdrip-settings.php:131
+msgid "Drip Publishing Settings"
+msgstr "Ajustes de publicación por goteo"
+
+#: includes/class-phdrip-settings.php:137
+msgid "Enable automatic scheduling"
+msgstr "Activar la programación automática"
+
+#: includes/class-phdrip-settings.php:138
+msgid "Posts per day"
+msgstr "Entradas por día"
+
+#: includes/class-phdrip-settings.php:139
+msgid "Publishing time window"
+msgstr "Franja horaria de publicación"
+
+#: includes/class-phdrip-settings.php:140
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+#: includes/class-phdrip-settings.php:141
+msgid "Post types"
+msgstr "Tipos de contenido"
+
+#: includes/class-phdrip-settings.php:142
+msgid "Categories"
+msgstr "Categorías"
+
+#: includes/class-phdrip-settings.php:143
+msgid "Assignment order"
+msgstr "Orden de asignación"
+
+#: includes/class-phdrip-settings.php:144
+msgid "Failure recovery"
+msgstr "Recuperación ante fallos"
+
+#: includes/class-phdrip-settings.php:145
+msgid "Notification email"
+msgstr "Correo de notificación"
+
+#: includes/class-phdrip-settings.php:185
+msgid ""
+"Minimum posts per day cannot exceed the maximum. The maximum was raised to "
+"match the minimum."
+msgstr ""
+"El mínimo de entradas por día no puede superar el máximo. El máximo se ha "
+"aumentado para igualar el mínimo."
+
+#: includes/class-phdrip-settings.php:207
+msgid ""
+"The end time must be later than the start time. The previous time window was"
+" kept."
+msgstr ""
+"La hora de fin debe ser posterior a la de inicio. Se mantuvo la franja "
+"horaria anterior."
+
+#: includes/class-phdrip-settings.php:257
+msgid ""
+"The notification email address is not valid. The previous value was kept."
+msgstr ""
+"La dirección de correo de notificación no es válida. Se mantuvo el valor "
+"anterior."
+
+#: includes/class-phdrip-settings.php:312
+msgid "Automatically schedule drafts on a daily basis."
+msgstr "Programar automáticamente los borradores a diario."
+
+#: includes/class-phdrip-settings.php:324
+msgid "Min"
+msgstr "Mín"
+
+#: includes/class-phdrip-settings.php:329
+msgid "Max"
+msgstr "Máx"
+
+#: includes/class-phdrip-settings.php:332
+msgid ""
+"A random number of posts within this range will be scheduled each day "
+"(1-50)."
+msgstr ""
+"Cada día se programará un número aleatorio de entradas dentro de este rango "
+"(1-50)."
+
+#: includes/class-phdrip-settings.php:343
+msgid "From"
+msgstr "Desde"
+
+#: includes/class-phdrip-settings.php:348
+msgid "To"
+msgstr "Hasta"
+
+#: includes/class-phdrip-settings.php:351
+msgid ""
+"Posts will only be scheduled within this daily time window (site time). At "
+"least 15 minutes apart."
+msgstr ""
+"Las entradas solo se programarán dentro de esta franja horaria diaria (hora "
+"del sitio). Con al menos 15 minutos de separación."
+
+#: includes/class-phdrip-settings.php:362
+msgid ""
+"The earliest date new posts may be assigned to. Existing scheduled posts are"
+" never overwritten."
+msgstr ""
+"La fecha más temprana a la que se pueden asignar nuevas entradas. Las "
+"entradas ya programadas nunca se sobrescriben."
+
+#: includes/class-phdrip-settings.php:401
+msgid ""
+"Applies to the \"Post\" post type only. Leave empty to include all "
+"categories."
+msgstr ""
+"Se aplica únicamente al tipo de contenido «Entrada». Déjalo vacío para "
+"incluir todas las categorías."
+
+#: includes/class-phdrip-settings.php:412
+msgid "Random"
+msgstr "Aleatorio"
+
+#: includes/class-phdrip-settings.php:413
+msgid "Oldest first"
+msgstr "Más antiguas primero"
+
+#: includes/class-phdrip-settings.php:426
+msgid ""
+"Automatically republish posts that missed their scheduled publish time."
+msgstr ""
+"Volver a publicar automáticamente las entradas que se saltaron su hora de "
+"publicación programada."
+
+#: includes/class-phdrip-settings.php:428
+msgid ""
+"Adopted posts (see \"Scheduled (site-wide)\" above) are covered by failure "
+"recovery once imported."
+msgstr ""
+"Las entradas adoptadas (ver «Programadas (en todo el sitio)» arriba) quedan "
+"cubiertas por la recuperación ante fallos una vez importadas."
+
+#: includes/class-phdrip-settings.php:439
+msgid ""
+"Email address to notify when posts are recovered. Leave empty to disable "
+"notifications."
+msgstr ""
+"Dirección de correo a la que avisar cuando se recuperen entradas. Déjala "
+"vacía para desactivar las notificaciones."
+
+#: includes/class-phdrip-watchdog.php:47
+msgid "Every 15 Minutes (PressHangar Draft Pacer)"
+msgstr "Cada 15 minutos (PressHangar Draft Pacer)"
+
+#. translators: 1: site name, 2: number of recovered posts.
+#: includes/class-phdrip-watchdog.php:152
+#, php-format
+msgid "[%1$s] PressHangar Draft Pacer recovered %2$d missed post(s)"
+msgstr "[%1$s] PressHangar Draft Pacer recuperó %2$d entrada(s) perdida(s)"
+
+#. translators: %d: number of recovered posts.
+#: includes/class-phdrip-watchdog.php:159
+#, php-format
+msgid ""
+"PressHangar Draft Pacer detected %d post(s) that failed to publish on their "
+"scheduled time (likely a WP-Cron issue) and republished them immediately. "
+"You may want to check that WP-Cron is running reliably on your site."
+msgstr ""
+"PressHangar Draft Pacer detectó %d entrada(s) que no se publicaron a su hora"
+" programada (probablemente un problema de WP-Cron) y las volvió a publicar "
+"de inmediato. Quizá quieras comprobar que WP-Cron funciona de forma fiable "
+"en tu sitio."
+
+#: includes/class-phdrip-admin.php:0
+msgid "Getting started"
+msgstr "Primeros pasos"
+
+#: includes/class-phdrip-admin.php:0
+msgid ""
+"PressHangar Draft Pacer publishes your backlog of drafts automatically, "
+"spaced out at natural, human-like intervals — with a watchdog that makes "
+"sure nothing is missed. It never generates content. New here? These few "
+"steps get you going."
+msgstr ""
+"PressHangar Draft Pacer publica automáticamente tu acumulación de "
+"borradores, espaciados a intervalos naturales y realistas — con un perro "
+"guardián que se asegura de que no se pierda nada. Nunca genera contenido. "
+"¿Es tu primera vez? Estos pocos pasos te ponen en marcha."
+
+#: includes/class-phdrip-admin.php:0
+msgid "Turn on automatic scheduling"
+msgstr "Activa la programación automática"
+
+#: includes/class-phdrip-admin.php:0
+msgid ""
+"In the settings below, choose which post types and categories to pace and "
+"how fast to publish, tick \"Enable automatic scheduling\", then Save."
+msgstr ""
+"En los ajustes de abajo, elige qué tipos de contenido y categorías cadenciar"
+" y a qué velocidad publicar, marca «Activar la programación automática» y "
+"guarda."
+
+#: includes/class-phdrip-admin.php:0
+msgid "Schedule your current drafts"
+msgstr "Programa tus borradores actuales"
+
+#: includes/class-phdrip-admin.php:0
+msgid ""
+"Press \"Run Assignment Now\" above to space out the drafts you already have."
+" After that, new drafts are paced automatically every day."
+msgstr ""
+"Pulsa «Ejecutar la asignación ahora» arriba para espaciar los borradores que"
+" ya tienes. Después, los borradores nuevos se cadencian automáticamente cada"
+" día."
+
+#: includes/class-phdrip-admin.php:0
+msgid "Make sure posts publish on time"
+msgstr "Asegúrate de que las entradas se publiquen a tiempo"
+
+#: includes/class-phdrip-admin.php:0
+msgid ""
+"Drip publishing relies on WordPress cron. If \"Cron health\" above shows a "
+"warning, follow the External Cron Setup Guide on this page — the built-in "
+"watchdog still rescues any missed post in the meantime."
+msgstr ""
+"La publicación por goteo depende del cron de WordPress. Si «Estado del cron»"
+" arriba muestra una advertencia, sigue la Guía de configuración de cron "
+"externo de esta página — mientras tanto, el perro guardián integrado rescata"
+" cualquier entrada perdida."

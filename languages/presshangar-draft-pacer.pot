@@ -1,0 +1,466 @@
+# Copyright (C) 2026 Musubiemu LLC
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: PressHangar Draft Pacer 0.2.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/presshangar-draft-pacer\n"
+"POT-Creation-Date: 2026-08-22T22:45:50+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: presshangar-draft-pacer\n"
+"X-Generator: WP-CLI 2.12.0\n"
+
+#. Plugin Name of the plugin
+#: presshangar-draft-pacer.php includes/class-phdrip-admin.php:55
+#: includes/class-phdrip-admin.php:56 includes/class-phdrip-admin.php:516
+msgid "PressHangar Draft Pacer"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: presshangar-draft-pacer.php
+msgid "https://presshangar.com/presshangar-draft-pacer"
+msgstr ""
+
+#. Description of the plugin
+#: presshangar-draft-pacer.php
+msgid ""
+"Source-agnostic natural pacing publishing layer for WordPress drafts, by "
+"PressHangar (a brand of Musubiemu LLC). Schedules drafts as \"future\" posts"
+" with human-like intervals and guarantees zero missed publications via a "
+"self-healing watchdog. Does not generate any content."
+msgstr ""
+
+#. Author of the plugin
+#: presshangar-draft-pacer.php
+msgid "Musubiemu LLC"
+msgstr ""
+
+#. Author URI of the plugin
+#: presshangar-draft-pacer.php
+msgid "https://presshangar.com"
+msgstr ""
+
+#. translators: %d: number of posts scheduled.
+#: includes/class-phdrip-admin.php:102
+#, php-format
+msgid "PressHangar Draft Pacer scheduled %d draft."
+msgid_plural "PressHangar Draft Pacer scheduled %d drafts."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of posts that failed to schedule.
+#: includes/class-phdrip-admin.php:109
+#, php-format
+msgid "%d failed."
+msgid_plural "%d failed."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of posts reverted to draft.
+#: includes/class-phdrip-admin.php:126
+#, php-format
+msgid "PressHangar Draft Pacer reverted %d scheduled post back to draft."
+msgid_plural ""
+"PressHangar Draft Pacer reverted %d scheduled posts back to draft."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of existing scheduled posts adopted into
+#. PressHangar Draft Pacer management.
+#: includes/class-phdrip-admin.php:139
+#, php-format
+msgid ""
+"PressHangar Draft Pacer adopted %d existing scheduled post into management."
+msgid_plural ""
+"PressHangar Draft Pacer adopted %d existing scheduled posts into management."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-phdrip-admin.php:151
+msgid ""
+"PressHangar Draft Pacer: WP-Cron does not appear to be running (no watchdog "
+"activity in over 2 hours). Scheduled posts may not publish on time. Consider"
+" setting up an external cron trigger under Settings > PressHangar Draft "
+"Pacer."
+msgstr ""
+
+#: includes/class-phdrip-admin.php:161 includes/class-phdrip-admin.php:187
+#: includes/class-phdrip-admin.php:224
+msgid "You do not have permission to perform this action."
+msgstr ""
+
+#: includes/class-phdrip-admin.php:519
+msgid "Status"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:523
+msgid "Automatic scheduling"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:526
+msgid "Enabled"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:528
+msgid "Disabled"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:533
+msgid "Remaining drafts"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:537
+msgid "Scheduled (PressHangar Draft Pacer-managed)"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:541
+msgid "Scheduled (site-wide)"
+msgstr ""
+
+#. translators: %d: number of scheduled posts outside PressHangar Draft
+#. Pacer's management.
+#: includes/class-phdrip-admin.php:548
+#, php-format
+msgid ""
+"There is %d scheduled post outside PressHangar Draft Pacer's management. Use"
+" the button below to adopt it so it's included in the counts and protected "
+"by failure recovery (the watchdog)."
+msgid_plural ""
+"There are %d scheduled posts outside PressHangar Draft Pacer's management. "
+"Use the button below to adopt them so they're included in the counts and "
+"protected by failure recovery (the watchdog)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-phdrip-admin.php:564
+msgid "Next publish"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:565
+msgid "None scheduled"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:568
+msgid "Cron health"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:571
+msgid "OK"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:573
+msgid "Warning"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:578
+msgid "Total recovered posts"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:588
+msgid "Run Assignment Now"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:591
+msgid ""
+"Are you sure you want to revert all PressHangar Draft Pacer scheduled posts "
+"back to draft? This cannot be undone."
+msgstr ""
+
+#: includes/class-phdrip-admin.php:594
+msgid "Unschedule All"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:598
+msgid ""
+"Import existing scheduled posts into PressHangar Draft Pacer management? "
+"Post dates and status will not be changed."
+msgstr ""
+
+#: includes/class-phdrip-admin.php:601
+msgid "Adopt Existing Scheduled Posts"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:611
+msgid "Save Settings"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:617
+msgid "External Cron Setup Guide"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:619
+msgid "DISABLE_WP_CRON is defined on this site."
+msgstr ""
+
+#: includes/class-phdrip-admin.php:619
+msgid ""
+"WordPress will not trigger cron automatically; an external trigger is "
+"required."
+msgstr ""
+
+#: includes/class-phdrip-admin.php:621
+msgid ""
+"WP-Cron relies on site visits to run scheduled tasks, which can be "
+"unreliable on low-traffic sites. Setting up a real server cron job is "
+"recommended."
+msgstr ""
+
+#: includes/class-phdrip-admin.php:623
+msgid ""
+"Add one of the following lines to your server crontab (runs every 15 "
+"minutes):"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:630
+msgid "Where to paste it"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:632
+msgid "Shared hosting"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:633
+msgid ""
+"Most hosting control panels (cPanel, Plesk, and most rental servers) have a "
+"'Cron jobs' section. Paste the line above there. If the panel asks for "
+"command and schedule separately, set the schedule to every 15 minutes."
+msgstr ""
+
+#: includes/class-phdrip-admin.php:635
+msgid "VPS / dedicated server"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:636
+msgid "Run `crontab -e` and paste the line above on a new line."
+msgstr ""
+
+#: includes/class-phdrip-admin.php:638
+msgid "Home server"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:639
+msgid ""
+"If WordPress runs on your own machine, use crontab on Linux/macOS, or Task "
+"Scheduler on Windows to run the command every 15 minutes."
+msgstr ""
+
+#: includes/class-phdrip-admin.php:641
+msgid ""
+"No cron settings available? Some hosts don't offer cron at all. You can "
+"register the URL above with a free external ping service such as cron-"
+"job.org — or simply skip this step. External cron is only an extra safety "
+"net: the plugin works with the normal WordPress cron, and the built-in "
+"watchdog rescues any missed posts."
+msgstr ""
+
+#: includes/class-phdrip-scheduler.php:64
+msgid "No draft posts were found to schedule."
+msgstr ""
+
+#. translators: 1: number of posts scheduled, 2: date/time of the last
+#. scheduled post, 3: number of posts that failed.
+#: includes/class-phdrip-scheduler.php:131
+#, php-format
+msgid ""
+"Scheduled %1$d draft(s). Last post is set for %2$s. %3$d failed and were "
+"left as drafts."
+msgstr ""
+
+#. translators: 1: number of posts scheduled, 2: date/time of the last
+#. scheduled post.
+#: includes/class-phdrip-scheduler.php:139
+#, php-format
+msgid "Scheduled %1$d draft(s). Last post is set for %2$s."
+msgstr ""
+
+#: includes/class-phdrip-settings.php:131
+msgid "Drip Publishing Settings"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:137
+msgid "Enable automatic scheduling"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:138
+msgid "Posts per day"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:139
+msgid "Publishing time window"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:140
+msgid "Start date"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:141
+msgid "Post types"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:142
+msgid "Categories"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:143
+msgid "Assignment order"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:144
+msgid "Failure recovery"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:145
+msgid "Notification email"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:185
+msgid ""
+"Minimum posts per day cannot exceed the maximum. The maximum was raised to "
+"match the minimum."
+msgstr ""
+
+#: includes/class-phdrip-settings.php:207
+msgid ""
+"The end time must be later than the start time. The previous time window was"
+" kept."
+msgstr ""
+
+#: includes/class-phdrip-settings.php:257
+msgid ""
+"The notification email address is not valid. The previous value was kept."
+msgstr ""
+
+#: includes/class-phdrip-settings.php:312
+msgid "Automatically schedule drafts on a daily basis."
+msgstr ""
+
+#: includes/class-phdrip-settings.php:324
+msgid "Min"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:329
+msgid "Max"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:332
+msgid ""
+"A random number of posts within this range will be scheduled each day "
+"(1-50)."
+msgstr ""
+
+#: includes/class-phdrip-settings.php:343
+msgid "From"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:348
+msgid "To"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:351
+msgid ""
+"Posts will only be scheduled within this daily time window (site time). At "
+"least 15 minutes apart."
+msgstr ""
+
+#: includes/class-phdrip-settings.php:362
+msgid ""
+"The earliest date new posts may be assigned to. Existing scheduled posts are"
+" never overwritten."
+msgstr ""
+
+#: includes/class-phdrip-settings.php:401
+msgid ""
+"Applies to the \"Post\" post type only. Leave empty to include all "
+"categories."
+msgstr ""
+
+#: includes/class-phdrip-settings.php:412
+msgid "Random"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:413
+msgid "Oldest first"
+msgstr ""
+
+#: includes/class-phdrip-settings.php:426
+msgid ""
+"Automatically republish posts that missed their scheduled publish time."
+msgstr ""
+
+#: includes/class-phdrip-settings.php:428
+msgid ""
+"Adopted posts (see \"Scheduled (site-wide)\" above) are covered by failure "
+"recovery once imported."
+msgstr ""
+
+#: includes/class-phdrip-settings.php:439
+msgid ""
+"Email address to notify when posts are recovered. Leave empty to disable "
+"notifications."
+msgstr ""
+
+#: includes/class-phdrip-watchdog.php:47
+msgid "Every 15 Minutes (PressHangar Draft Pacer)"
+msgstr ""
+
+#. translators: 1: site name, 2: number of recovered posts.
+#: includes/class-phdrip-watchdog.php:152
+#, php-format
+msgid "[%1$s] PressHangar Draft Pacer recovered %2$d missed post(s)"
+msgstr ""
+
+#. translators: %d: number of recovered posts.
+#: includes/class-phdrip-watchdog.php:159
+#, php-format
+msgid ""
+"PressHangar Draft Pacer detected %d post(s) that failed to publish on their "
+"scheduled time (likely a WP-Cron issue) and republished them immediately. "
+"You may want to check that WP-Cron is running reliably on your site."
+msgstr ""
+
+#: includes/class-phdrip-admin.php:0
+msgid "Getting started"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:0
+msgid ""
+"PressHangar Draft Pacer publishes your backlog of drafts automatically, "
+"spaced out at natural, human-like intervals — with a watchdog that makes "
+"sure nothing is missed. It never generates content. New here? These few "
+"steps get you going."
+msgstr ""
+
+#: includes/class-phdrip-admin.php:0
+msgid "Turn on automatic scheduling"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:0
+msgid ""
+"In the settings below, choose which post types and categories to pace and "
+"how fast to publish, tick \"Enable automatic scheduling\", then Save."
+msgstr ""
+
+#: includes/class-phdrip-admin.php:0
+msgid "Schedule your current drafts"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:0
+msgid ""
+"Press \"Run Assignment Now\" above to space out the drafts you already have."
+" After that, new drafts are paced automatically every day."
+msgstr ""
+
+#: includes/class-phdrip-admin.php:0
+msgid "Make sure posts publish on time"
+msgstr ""
+
+#: includes/class-phdrip-admin.php:0
+msgid ""
+"Drip publishing relies on WordPress cron. If \"Cron health\" above shows a "
+"warning, follow the External Cron Setup Guide on this page — the built-in "
+"watchdog still rescues any missed post in the meantime."
+msgstr ""
