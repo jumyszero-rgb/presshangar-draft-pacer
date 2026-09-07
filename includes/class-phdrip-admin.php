@@ -37,6 +37,12 @@ class PHDRIP_Admin {
 	const ADOPT_BATCH_SIZE = 100;
 
 	/**
+	 * Option flag: set to 1 once the user has dismissed the review request,
+	 * so it never appears again on this site.
+	 */
+	const OPTION_REVIEW_DISMISSED = 'phdrip_review_dismissed';
+
+	/**
 	 * Hook registration.
 	 */
 	public static function init() {
@@ -554,6 +560,56 @@ class PHDRIP_Admin {
 	}
 
 	/**
+	 * Record the user's choice to dismiss the review request. Fired from the
+	 * "No thanks" link on the review card; guarded by capability + nonce.
+	 *
+	 * @return void
+	 */
+	private static function maybe_dismiss_review() {
+		if ( ! isset( $_GET['phdrip_review_off'] ) || ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+		if ( ! isset( $_GET['_wpnonce'] ) || ! wp_verify_nonce( sanitize_key( wp_unslash( $_GET['_wpnonce'] ) ), 'phdrip_review_off' ) ) {
+			return;
+		}
+		update_option( self::OPTION_REVIEW_DISMISSED, 1 );
+	}
+
+	/**
+	 * A gentle, dismissible request for a wordpress.org review. Shows only
+	 * after the plugin has actually done its job (scheduled or recovered at
+	 * least one post) and never again once dismissed. No incentive is offered.
+	 *
+	 * @param bool $earned Whether the plugin has been used enough to ask.
+	 * @return void
+	 */
+	private static function render_review_ask( $earned ) {
+		if ( ! $earned || get_option( self::OPTION_REVIEW_DISMISSED ) ) {
+			return;
+		}
+
+		$review_url  = 'https://wordpress.org/support/plugin/presshangar-draft-pacer/reviews/#new-post';
+		$dismiss_url = wp_nonce_url(
+			add_query_arg(
+				array(
+					'page'              => PHDRIP_Settings::PAGE_SLUG,
+					'phdrip_review_off' => 1,
+				),
+				admin_url( 'options-general.php' )
+			),
+			'phdrip_review_off'
+		);
+
+		$html  = '<div class="card" style="max-width:640px;border-left:4px solid #f6a72a;">';
+		$html .= '<p style="margin:.2em 0 .6em;">' . esc_html__( 'Finding this plugin useful? A quick review really helps others discover it — thank you!', 'presshangar-draft-pacer' ) . '</p>';
+		$html .= '<a href="' . esc_url( $review_url ) . '" target="_blank" rel="noopener" class="button button-primary" style="margin-right:.6em;">' . esc_html__( 'Leave a review ★★★★★', 'presshangar-draft-pacer' ) . '</a>';
+		$html .= '<a href="' . esc_url( $dismiss_url ) . '" style="color:#50575e;text-decoration:none;">' . esc_html__( 'No thanks', 'presshangar-draft-pacer' ) . '</a>';
+		$html .= '</div>';
+
+		echo wp_kses_post( $html );
+	}
+
+	/**
 	 * Render the settings page: status card, action buttons, settings form,
 	 * and (when relevant) the external cron guide.
 	 */
@@ -562,7 +618,9 @@ class PHDRIP_Admin {
 			return;
 		}
 
-		$status = self::get_status();
+		self::maybe_dismiss_review();
+		$status        = self::get_status();
+		$review_earned = ( $status['future_count'] > 0 || $status['recovered_count'] > 0 );
 		?>
 		<div class="wrap">
 			<h1><?php esc_html_e( 'PressHangar Draft Pacer', 'presshangar-draft-pacer' ); ?></h1>
@@ -695,6 +753,8 @@ class PHDRIP_Admin {
 					<p><?php esc_html_e( "No cron settings available? Some hosts don't offer cron at all. You can register the URL above with a free external ping service such as cron-job.org — or simply skip this step. External cron is only an extra safety net: the plugin works with the normal WordPress cron, and the built-in watchdog rescues any missed posts.", 'presshangar-draft-pacer' ); ?></p>
 				</div>
 			<?php endif; ?>
+
+			<?php self::render_review_ask( $review_earned ); ?>
 		</div>
 		<?php
 	}

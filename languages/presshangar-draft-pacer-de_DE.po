@@ -556,3 +556,19 @@ msgstr ""
 "Zustand“ oben eine Warnung anzeigt, folge der Einrichtungsanleitung für "
 "externen Cron auf dieser Seite — in der Zwischenzeit rettet der eingebaute "
 "Wächter jeden verpassten Beitrag."
+
+#: includes/class-phdrip-admin.php:0
+msgid ""
+"Finding this plugin useful? A quick review really helps others discover it —"
+" thank you!"
+msgstr ""
+"Findest du dieses Plugin nützlich? Eine kurze Bewertung hilft anderen sehr, "
+"es zu entdecken – danke!"
+
+#: includes/class-phdrip-admin.php:0
+msgid "Leave a review ★★★★★"
+msgstr "Bewertung abgeben ★★★★★"
+
+#: includes/class-phdrip-admin.php:0
+msgid "No thanks"
+msgstr "Nein, danke"

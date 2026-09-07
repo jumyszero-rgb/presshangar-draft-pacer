@@ -1,16 +1,18 @@
 === PressHangar Draft Pacer ===
 Contributors: presshangar
-Tags: schedule, drip, drafts, auto publish, missed schedule
+Tags: schedule posts, auto publish, post scheduler, scheduled posts, drip
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.2.10
+Stable tag: 0.2.11
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Drip-publish your WordPress drafts at a natural, human-like pace, with a watchdog that catches missed schedules.
+Automatically schedule your existing drafts to publish over time at a natural pace — a hands-off post scheduler and auto-publisher for WordPress.
 
 == Description ==
+
+PressHangar Draft Pacer is a hands-off post scheduler that automatically publishes your existing drafts over time at a natural, random pace. Bulk-schedule a backlog of drafts and let WordPress auto-publish them on a steady drip — no manual date-picking.
 
 PressHangar Draft Pacer is a pacing and reliability layer for WordPress content distribution. Whether your drafts come from AI tools, bulk imports, or human writers, this plugin publishes them at a measured, natural cadence, while a built-in watchdog helps ensure schedules are not missed. It does not generate content, optimize SEO, or make any guarantee about search rankings or penalties.
 
@@ -94,6 +96,9 @@ PressHangar Draft Pacer provides a **reliable pacing layer** that distributes co
 Always follow Google's content policies, prioritize quality over quantity, and use this plugin as part of a larger, thoughtful content strategy. If you're already in penalty, consult Google Search Console and a professional SEO advisor.
 
 == Changelog ==
+
+= 0.2.11 =
+* Added a gentle, dismissible review request that appears only after the plugin has scheduled posts (no incentives). readme search-keyword optimization. No functional or data changes to scheduling.
 
 = 0.2.10 =
 * Fix: the plugin icon and banner are now correctly bundled and shown on the WordPress.org plugin page.

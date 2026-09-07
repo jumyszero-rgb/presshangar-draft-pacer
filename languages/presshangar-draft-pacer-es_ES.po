@@ -551,3 +551,19 @@ msgstr ""
 " arriba muestra una advertencia, sigue la Guía de configuración de cron "
 "externo de esta página — mientras tanto, el perro guardián integrado rescata"
 " cualquier entrada perdida."
+
+#: includes/class-phdrip-admin.php:0
+msgid ""
+"Finding this plugin useful? A quick review really helps others discover it —"
+" thank you!"
+msgstr ""
+"¿Te resulta útil este plugin? Una breve reseña ayuda a que otros lo "
+"descubran. ¡Gracias!"
+
+#: includes/class-phdrip-admin.php:0
+msgid "Leave a review ★★★★★"
+msgstr "Deja una reseña ★★★★★"
+
+#: includes/class-phdrip-admin.php:0
+msgid "No thanks"
+msgstr "No, gracias"

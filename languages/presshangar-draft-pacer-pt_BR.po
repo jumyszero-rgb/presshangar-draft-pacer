@@ -549,3 +549,19 @@ msgstr ""
 "cron\" acima mostrar um aviso, siga o Guia de configuração de cron externo "
 "desta página — enquanto isso, o cão de guarda integrado resgata qualquer "
 "post perdido."
+
+#: includes/class-phdrip-admin.php:0
+msgid ""
+"Finding this plugin useful? A quick review really helps others discover it —"
+" thank you!"
+msgstr ""
+"Este plugin é útil para você? Uma avaliação rápida ajuda outras pessoas a "
+"descobri-lo — obrigado!"
+
+#: includes/class-phdrip-admin.php:0
+msgid "Leave a review ★★★★★"
+msgstr "Deixe uma avaliação ★★★★★"
+
+#: includes/class-phdrip-admin.php:0
+msgid "No thanks"
+msgstr "Não, obrigado"

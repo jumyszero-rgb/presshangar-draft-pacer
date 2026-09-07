@@ -483,3 +483,17 @@ msgid ""
 msgstr ""
 "ドリップ公開は WordPress の cron "
 "に依存します。上の「Cronの状態」に警告が出ている場合は、このページの「外部Cron設定ガイド」に従ってください。その間も内蔵のウォッチドッグが取りこぼした投稿を必ず復旧します。"
+
+#: includes/class-phdrip-admin.php:0
+msgid ""
+"Finding this plugin useful? A quick review really helps others discover it —"
+" thank you!"
+msgstr "このプラグインは役に立っていますか？ ひとことのレビューが、他の人が見つける助けになります。ありがとうございます！"
+
+#: includes/class-phdrip-admin.php:0
+msgid "Leave a review ★★★★★"
+msgstr "レビューを書く ★★★★★"
+
+#: includes/class-phdrip-admin.php:0
+msgid "No thanks"
+msgstr "いいえ"

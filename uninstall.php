@@ -17,6 +17,7 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 
 delete_option( 'phdrip_settings' );
 delete_option( 'phdrip_state' );
+delete_option( 'phdrip_review_dismissed' );
 
 delete_post_meta_by_key( '_phdrip_scheduled' );
 delete_post_meta_by_key( '_phdrip_orig_date' );

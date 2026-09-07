@@ -555,3 +555,19 @@ msgstr ""
 "État du cron » ci-dessus affiche un avertissement, suivez le Guide de "
 "configuration du cron externe sur cette page — en attendant, le chien de "
 "garde intégré rattrape tout article manqué."
+
+#: includes/class-phdrip-admin.php:0
+msgid ""
+"Finding this plugin useful? A quick review really helps others discover it —"
+" thank you!"
+msgstr ""
+"Ce plugin vous est utile ? Un court avis aide vraiment les autres à le "
+"découvrir — merci !"
+
+#: includes/class-phdrip-admin.php:0
+msgid "Leave a review ★★★★★"
+msgstr "Laisser un avis ★★★★★"
+
+#: includes/class-phdrip-admin.php:0
+msgid "No thanks"
+msgstr "Non merci"
