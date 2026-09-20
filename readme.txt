@@ -4,7 +4,7 @@ Tags: schedule posts, auto publish, post scheduler, scheduled posts, drip
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.2.11
+Stable tag: 0.2.12
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,6 +96,9 @@ PressHangar Draft Pacer provides a **reliable pacing layer** that distributes co
 Always follow Google's content policies, prioritize quality over quantity, and use this plugin as part of a larger, thoughtful content strategy. If you're already in penalty, consult Google Search Console and a professional SEO advisor.
 
 == Changelog ==
+
+= 0.2.12 =
+* Re-release to publish the search-keyword readme optimization. The previous tag did not update the directory listing. No functional or data changes to scheduling.
 
 = 0.2.11 =
 * Added a gentle, dismissible review request that appears only after the plugin has scheduled posts (no incentives). readme search-keyword optimization. No functional or data changes to scheduling.
